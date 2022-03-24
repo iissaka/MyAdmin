@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MyAdmin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+      <!-- nav -->
+<nav>
+    <div class="navbar-fixed">
+        <nav class="blue">
+                <div class="container">
+                  <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo">MyAdmin</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li class="active"><a href="#">Dashboard</a></li>
+                      <li><a href="post.html">Post</a></li>
+                      <li><a href="categorie.html">Categories</a></li>
+                      <li><a href="comment.html">Comments</a></li>
+                      <li><a href="user.html">Users</a></li>
+                      <li><a id="latteral" href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>       
+        <li>
+            <ul class="sidenav" id="mobile-demo">
+                <li>
+                  <div class="user-view">
+                    <div class="background">
+                      <img src="Images/bg.jpg">
+                    </div>
+                    <a href="#!user"><img class="circle" src="Images/Is.jpg"></a>
+                    <a href="#!name"><span class="white-text name">Ismael Issaka</span></a>
+                    <a href="#!email"><span class="white-text email">iissaka@outlook.com</span></a>
+                  </div>
+                </li>
+                <li class="active"><a href="#"><i class="material-icons left">dashboard</i>Dashboard</a></li>
+                <li><a href="post.html">Post</a></li>
+                <li><a href="categorie.html">Categories</a></li>
+                <li><a href="comment.html">Comments</a></li>
+                <li><a href="user.html">Users</a></li>
+                <li><div class="divider"></div></li>
+            </ul>
+        </li>
+        
+
+     <a href="index.html" class="brand-logo">MyAdmin</a>
+     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+    <!-- end nav -->
+    <section id="block">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col l3 m6 s12 center">
+            <div class="card blue">
+              <div class="card-content white-text">
+                <i class="medium material-icons">mood</i>
+                <h6>Monthly Visitors</h6>
+                <h4>35900</h4>
+                <div class="progress blue-grey lighten-4">
+                  <div class="determinate white" style="width: 50%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12 center">
+            <div class="card">
+              <div class="card-content">
+                <i class="medium material-icons">mode_edit</i>
+                <h6>Blog Posts</h6>
+                <h4>207</h4>
+                <div class="progress blue-grey lighten-4">
+                  <div class="determinate blue" style="width: 30%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12 center">
+            <div class="card blue">
+              <div class="card-content white-text">
+                <i class="medium material-icons">mode_comment</i>
+                <h6>Comments</h6>
+                <h4>2300</h4>
+                <div class="progress blue-grey lighten-4">
+                  <div class="determinate white" style="width: 10%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12 center">
+            <div class="card">
+              <div class="card-content">
+                <i class="medium material-icons">people</i>
+                <h6>Users</h6>
+                <h4>410</h4>
+                <div class="progress blue-grey lighten-4">
+                  <div class="determinate blue" style="width: 20%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="chart" class="light-blue lighten-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col l8 m12 s12">
+            <div id="dailyVisitor" style="height: 350px; width: 100%;"></div>
+          </div>
+          <div class="col l4 m12 s12">
+            <ul class="collection">
+              <li class="collection-item"><h6>Latest Comments</h6></li>
+              <li class="collection-item avatar">
+                <img src="Images/kaltoum.png" alt="" class="circle">
+                <span class="title">Kaltoum Matto</span>
+                <p class="overflow">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore excepturi nostrum repellendus? Natus reprehenderit deleniti enim beatae unde dolorum modi voluptates libero, optio accusamus ullam quos molestiae animi neque eligendi.
+                </p>
+                <a href="#" class="green-text">Approve</a> | <a href="#" class="red-text">Deny</a>
+              </li>
+              <li class="collection-item avatar">
+                <img src="Images/ali.jpg" alt="" class="circle">
+                <span class="title">Kader Ali</span>
+                <p class="overflow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt rem neque debitis eveniet provident cum. Maiores facilis quia quas sunt, saepe nemo inventore tempora laudantium modi, voluptatem minima quaerat repellat.
+                </p>
+                <a href="#" class="green-text">Approve</a> | <a href="#" class="red-text">Deny</a>
+              </li>
+              <li class="collection-item avatar">
+                <img src="Images/Michou.png" alt="" class="circle">
+                <span class="title">Michou Vilaine</span>
+                <p class="overflow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea nesciunt nemo quisquam quod, nostrum facere quidem minus sunt animi perferendis modi blanditiis corporis tempore debitis aliquid eius sapiente id quos.
+                </p>
+                <a href="#" class="green-text">Approve</a> | <a href="#" class="red-text">Deny</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="todo" class="grey lighten-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col l8 m12 s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Recents posts</span>
+                <table class="striped responsive-table">
+                  <thead>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th></th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Post One</td>
+                      <td>Web Developement</td>
+                      <td>
+                        <a href="#" class="btn blue white-text">DETAILS</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Post Two</td>
+                      <td>Graphic Design</td>
+                      <td>
+                        <a href="#" class="btn blue white-text">DETAILS</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Post Three</td>
+                      <td>Web Developement</td>
+                      <td>
+                        <a href="#" class="btn blue white-text">DETAILS</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 m12 s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Quick Todos</span>
+                <div class="input-fiel">
+                  <input placeholder="Add Todo..." type="text" class="validate">
+                </div>
+                <ul class="collection with-header">
+                  <li class="collection-item">
+                    <div>
+                      Todo One
+                      <a href="#" class="secondary-content">
+                        <i class="material-icons">clear</i>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div>
+                      Todo Two
+                      <a href="#" class="secondary-content">
+                        <i class="material-icons">clear</i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li>
+          <a href="#create" class="btn-floating blue modal-trigger">
+            <i class="material-icons">create</i>
+          </a>
+        </li>
+        <li>
+          <a href="#folder" class="btn-floating blue modal-trigger">
+            <i class="material-icons">folder</i>
+          </a>
+        </li>
+        <li>
+          <a href="#people" class="btn-floating blue modal-trigger">
+            <i class="material-icons">people</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="create" class="modal">
+      <div class="modal-content">
+        <h4>Add Post</h4>
+        <div class="input-field">
+          <input type="text" class="validate">
+          <label>Title</label>
+        </div>
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Select option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Category</label>
+        </div>
+        <div class="input-field">
+          <textarea name="editor" class="materialize-textarea"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn blue">SUBMIT</button>
+      </div>
+    </div>
+
+    <div id="folder" class="modal">
+      <div class="modal-content">
+        <h4>Add Category</h4>
+        <div class="input-field">
+          <input type="text" class="validate">
+          <label>Title</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn blue">SUBMIT</button>
+      </div>
+    </div>
+
+    <div id="people" class="modal">
+      <div class="modal-content">
+        <h4>Add User</h4>
+        <div class="input-field">
+          <input type="text" class="validate">
+          <label>Name</label>
+        </div>
+        <div class="input-field">
+          <input type="email" class="validate">
+          <label>Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" class="validate">
+          <label>Password</label>
+        </div>
+        <div id="confirm" class="input-field">
+          <input type="password" class="validate">
+          <label>Confirm Password</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn blue">SUBMIT</button>
+      </div>
+    </div>
+    <footer id="footer" class="blue white-text center">
+        <div class="footer-copyright">
+          <div class="container">
+            <p>MyAdmin Copyright &copy; 2022</p>
+          </div>
+        </div>
+      </footer>
+    <style>
+        nav a#latteral.sidenav-trigger{
+  display: block !important;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+#block .row, #chart .row, #todo .row, #table .row{
+  margin-bottom: 0px;
+}
+
+#chart{
+  height: 370px;
+  padding: 10px 0px;
+}
+
+#dailyVisitor{
+  margin: 5px auto;
+}
+
+.collection{
+  margin-top: 0px !important;
+}
+
+.collection h6{
+  margin: 0;
+  padding: 5px 0px;
+}
+
+#chart .collection p, #chart .collection a{
+  font-size: 12px;
+}
+
+.overflow{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+.modal-content{
+  padding-bottom: 0px !important;
+}
+
+#folder .input-field, #confirm.input-field{
+  margin-bottom: 0px !important;
+}
+
+.modal-footer button{
+  margin-right: 15px !important;
+  padding-top: 0px;
+}
+
+#table{
+  padding: 20px 0px;
+}
+
+#table .card{
+  margin: 0px;
+}
+
+#table img{
+  width: 42px;
+  height: 42px;
+}
+
+#footer{
+  padding: 5px 0px;
+}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      //CKEDITOR
+      CKEDITOR.replace('editor');
+
+      //On load
+      document.addEventListener('DOMContentLoaded', function() {
+        //NavBar
+        var sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav, {});
+        //Modal
+        var modal = document.querySelectorAll('.modal');
+        M.Modal.init(modal, {});
+        //Select
+        var select = document.querySelectorAll('select');
+        M.FormSelect.init(select, {});
+        //Charts canvas js
+        var chart = new CanvasJS.Chart("dailyVisitor", {
+          animationEnabled: true,
+          theme: "light2",
+          title:{
+            text: "Daily Visitors"
+          },
+          data: [{        
+            type: "line",
+                indexLabelFontSize: 16,
+            dataPoints: [
+              { y: 450 },
+              { y: 414},
+              { y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+              { y: 460 },
+              { y: 450 },
+              { y: 500 },
+              { y: 480 },
+              { y: 480 },
+              { y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+              { y: 500 },
+              { y: 480 },
+              { y: 510 }
+            ]
+          }]
+        });
+        chart.render();
+        //Float btn
+        var float = document.querySelectorAll('.fixed-action-btn');
+        M.FloatingActionButton.init(float, {});
+      });
+    </script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </body>
+</html>
